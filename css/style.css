@@ -15,6 +15,7 @@ a {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -41,7 +42,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, max-content);
-  gap: 2rem;
+  gap: 3rem;
 }
 
 main {
@@ -61,6 +62,7 @@ main {
   display: grid;
   grid-template-columns: 3rem 1fr;
   justify-items: start;
+  align-items: center;
 }
 
 .header-notificacion {
@@ -69,20 +71,72 @@ main {
   grid-template-columns: repeat(3, max-content);
   justify-content: end;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .header-usuario {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 .header-botones {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: end;
+  grid-template-columns: repeat(3, min-content);
+  gap: 2rem;
+  justify-content: end;
+}
+
+.header-search i {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.header-search div {
+  width: 100%;
+}
+
+.header-search input {
+  width: 100%;
+  background-color: #e2e8f0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.header-notificacion i {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.header-notificacion p {
+  font-weight: bold;
+}
+.header-notificacion img {
+  cursor: pointer;
+}
+
+.header-usuario img {
+  cursor: pointer;
+}
+.header-usuario p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.header-usuario .user-name {
+  font-size: 1.5rem;
+}
+
+.header-botones button {
+  display: inline-block;
+  background-color: #1992d4;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border-radius: 20px;
+  cursor: pointer;
 }
 /* -- HEADER -- */
 
@@ -92,6 +146,22 @@ main {
   grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 1rem;
+  color: white;
+}
+.sidebar a {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.logo {
+  cursor: pointer;
+}
+.logo i {
+  font-size: 2.5rem;
+}
+.sidebar i {
+  cursor: pointer;
 }
 /* -- SIDEBAR -- */
 
